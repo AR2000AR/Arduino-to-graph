@@ -106,6 +106,7 @@ void draw()
       line(t+50,yP1,t+50+pas,map(Rx,0,255,750,50));
       yP1=int(map(Rx,0,255,750,50));
       result1 = append(result1,int(map(Rx,0,255,0,graphHight)));
+      t=t+pas;
     }
     
     port.write(2);
@@ -126,7 +127,6 @@ void draw()
       line(t+50,yP3,t+50+pas,map(Rx,0,255,750,50));
       yP3=int(map(Rx,0,255,750,50));
       result3 = append(result3,int(map(Rx,0,255,0,graphHight)));
-      t=t+pas;
     }
   }
 }
